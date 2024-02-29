@@ -1,0 +1,213 @@
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #76e4bf, #5a91d1, #0cf7ff);
+    color: #333;
+    padding: 20px;
+}
+
+/* Gaya judul halaman dengan animasi */
+h1 {
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 20px;/* Reset margin dan padding default */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     
+/* Animasi untuk judul halaman */
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* Gaya navigasi */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 100%;
+    background: linear-gradient(135deg, #10ffff, #5a91d1, #b563e4);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Gaya tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    animation: fadeIn 1s ease;
+}
+
+table th,
+table td {
+    padding: 15px;
+    border: 5px solid #ddd;/* ukuran garis tabel */
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Gaya formulir */
+form {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+form table {
+    width: auto;
+    margin: 0 auto;
+}
+
+form table td {
+    padding: 10px;
+    border: none;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: #142233;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #7db9e8;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Animasi untuk elemen masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* teks selamat datang php */
+p {
+    text-align: center;
+    height: 55px;
+    font-family: verdana;
+}
+
+/* teks berjalan di index */
+.marquee {
+    border: 0px solid aquamarine;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee span {
+    display: inline-block;
+    animation: marquee 7s linear infinite;
+    font-family: monospace;
+    font-size: 2.3em;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* tombol aksi */
+  .aksi {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 3em;
+    color: black;
+  }
+
+  .aksi2 {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 3em;
+    color: black;
+  }
+
+  /* data tabel */
+  .datatabel {
+    text-align: center;
+  }
+
+  /* tombol kembali pada tabel edit */
+.btnkembali {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+}
