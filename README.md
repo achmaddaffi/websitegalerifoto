@@ -28,6 +28,8 @@ Halaman album berisi form untuk menambahkan album baru untuk menempatkan foto ya
 Untuk user demo, gunakan username dan password berikut:
 
 username : user1
+
+
 password : 12345
 
 Sekian, semoga bermanfaat.
